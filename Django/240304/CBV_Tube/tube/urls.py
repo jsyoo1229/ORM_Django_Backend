@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+app_name = 'tube'
+
 urlpatterns = [
     path('', views.post_list, name= 'post_list'),
     path('new/', views.post_new, name= 'post_new'),
